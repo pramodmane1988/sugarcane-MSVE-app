@@ -17,6 +17,13 @@ os.makedirs("results", exist_ok=True)
 # ============================================
 
 model = SugarcaneMSVE()
+
+# Create models folder
+os.makedirs("models", exist_ok=True)
+
+# Save model (ONLY for testing)
+torch.save(model.state_dict(), "models/msve_model.pth")
+
 model.eval()
 
 # ============================================
