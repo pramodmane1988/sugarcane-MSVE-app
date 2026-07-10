@@ -28,7 +28,7 @@ def load_model():
 
     model.load_state_dict(
         torch.load(
-            "models/msve_model.pth",
+            "__pycache__/msve_model.pth",
             map_location="cpu"
         )
     )
